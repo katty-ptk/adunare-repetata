@@ -29,7 +29,4 @@ $("#submit-btn").click(function (event) {
     $("#result").html($result);
 
     console.log($x);
-
-  //  alert($first_num);
- //   alert('working');
 });
