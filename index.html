@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <title>Adunare repetata</title>
+</head>
+<body>
+
+    <h1 id="title">Adunare repetata</h1>
+
+    <form id="content">
+
+        <div id="first_number_div">
+            <label for="first_Num">a: </label>
+            <input type="number" id="first_Num">
+        </div>
+
+        <div id="second_number_div">
+            <label for="second_Num">b: </label>
+            <input type="number" id="second_Num">
+        </div>
+
+        <button class="btn btn-dark" id="submit-btn">Calculeaza x</button>
+
+        <!-- input error message -->
+        <div class="error-message">
+            <p id="input-error-text-p"></p>
+        </div>
+
+        <div class="result">
+            <p id="result"></p>
+        </div>
+
+    </form>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
