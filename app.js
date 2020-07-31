@@ -1,5 +1,7 @@
 // x = a + a + a + ... + a (b ori) // 
 
+// STOP SHOWING ERROR IF THE INPUTS ARE FILLED IN CORRECTLY // 
+
 $("#submit-btn").click(function (event) {
     event.preventDefault();
 
