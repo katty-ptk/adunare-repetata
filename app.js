@@ -13,6 +13,7 @@ $("#submit-btn").click(function (event) {
         return false;
     }
 
+    // default values for i and x
     $i = 0;
     $x = 0;
 
@@ -22,12 +23,10 @@ $("#submit-btn").click(function (event) {
         $i++;
     }
 
+    // append the result to html without using append :DD
     $result = document.createElement('p');
     $result.textContent = "x = " + $x;
     $("#result").html($result);
 
     console.log($x);
-
-  //  alert($first_num);
- //   alert('working');
 });
