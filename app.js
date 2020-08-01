@@ -28,5 +28,8 @@ $("#submit-btn").click(function (event) {
     $result.textContent = "x = " + $x;
     $("#result").html($result);
 
+    $("#first_Num").val("");
+    $("#second_Num").val("");
+
     console.log($x);
 });
