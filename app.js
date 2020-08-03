@@ -15,22 +15,21 @@ $("#submit-btn").click( function ( event ) {
 
             $result_p.textContent = "x = " + $x;
             $("#result").html($result_p);
-
-
-
-
-            console.log($x);
+            
+           // console.log($x);
+            
         } while ( $i <= $second_num );
 
-       
     } else  {
+        
         $result_p.textContent = "Te rog introdu numere. :)";
         $("#result").html( $result_p );
+        
     }
 
     $("#first_Num").val("");
     $("#second_Num").val("");
 
-    console.log($x);
+//    console.log($x);
 
 });
