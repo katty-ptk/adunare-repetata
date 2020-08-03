@@ -18,12 +18,19 @@ $("#submit-btn").click( function ( event ) {
 
 
 
+
             console.log($x);
         } while ( $i <= $second_num );
 
        
     } else  {
         $result_p.textContent = "Te rog introdu numere. :)";
-        $(".result").html( $result_p );
+        $("#result").html( $result_p );
     }
+
+    $("#first_Num").val("");
+    $("#second_Num").val("");
+
+    console.log($x);
+
 });
