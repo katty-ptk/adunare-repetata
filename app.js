@@ -1,31 +1,42 @@
-$i = 1;
-$x = 0;
-$result_p = document.createElement('p');
+result_p = document.createElement('p');
+
+calculate_x = () => { 
+    first_num = parseInt($("#first_Num").val());
+    second_num = parseInt($("#second_Num").val());
+
+    x = 0;
+    i = 1;
+
+    while ( i <= second_num ) {
+        x += first_num;
+
+        result_p.textContent = "x = " + x;
+        $("#result").html(result_p);
+
+        i ++;
+
+        console.log(x);
+    };
+
+ }
+
 
 $("#submit-btn").click( function ( event ) {
     event.preventDefault();
 
-    $first_num = parseInt($("#first_Num").val());
-    $second_num = parseInt($("#second_Num").val());
+    first_num = parseInt($("#first_Num").val());
+    second_num = parseInt($("#second_Num").val());
 
-    if ( !( isNaN ( $first_num ) ) && !( isNaN ( $second_num ) ) ) {
-        do {
-            $i += 1;
-            $x += $first_num;
-
-            $result_p.textContent = "x = " + $x;
-            $("#result").html($result_p);
-            
-           // console.log($x);
-            
-        } while ( $i <= $second_num );
-
+    if ( !( isNaN ( first_num ) ) && !( isNaN ( second_num ) ) ) {
+        calculate_x();
     } else  {
         
-        $result_p.textContent = "Te rog introdu numere. :)";
-        $("#result").html( $result_p );
+        result_p.textContent = "Te rog introdu numere. :)";
+        $("#result").html( result_p );
         
     }
+
+
 
     $("#first_Num").val("");
     $("#second_Num").val("");
