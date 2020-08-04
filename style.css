@@ -27,3 +27,11 @@ body {
 #first_Num, #second_Num {
     width: 10%;
 }
+
+#hide_error {
+    display: none;
+}
+
+.erase {
+    display: block;
+}
