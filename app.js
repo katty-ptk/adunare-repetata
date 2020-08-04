@@ -2,17 +2,16 @@ result_p = document.createElement('p');
 
 function calculate_x ( first_num, second_num ) { 
 
-    x = 0;
-    i = 1;
+    var x = 0;
 
     while ( second_num != 0 ) {
         x += first_num;
         second_num --;
-        
+
         console.log(x);
     };
 
-    return x;
+    // return x;
 
  }
 
