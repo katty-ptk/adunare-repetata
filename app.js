@@ -45,3 +45,4 @@ $("#submit-btn").click( function ( event ) {
 
 });
 
+console.log(x);
