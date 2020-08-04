@@ -1,8 +1,6 @@
 result_p = document.createElement('p');
 
-calculate_x = () => { 
-    first_num = parseInt($("#first_Num").val());
-    second_num = parseInt($("#second_Num").val());
+function calculate_x ( first_num, second_num ) { 
 
     x = 0;
     i = 1;
@@ -28,7 +26,7 @@ $("#submit-btn").click( function ( event ) {
     second_num = parseInt($("#second_Num").val());
 
     if ( !( isNaN ( first_num ) ) && !( isNaN ( second_num ) ) ) {
-        calculate_x();
+        calculate_x( first_num, second_num );
     } else  {
         
         result_p.textContent = "Te rog introdu numere. :)";
@@ -44,3 +42,4 @@ $("#submit-btn").click( function ( event ) {
 //    console.log($x);
 
 });
+
