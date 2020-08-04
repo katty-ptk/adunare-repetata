@@ -11,7 +11,7 @@ function calculate_x ( first_num, second_num ) {
         console.log(x);
     };
 
-    // return x;
+    return x;
 
  }
 
@@ -24,9 +24,9 @@ $("#submit-btn").click( function ( event ) {
 
     if ( !( isNaN ( first_num ) ) && !( isNaN ( second_num ) ) ) {
         
-        calculate_x( first_num, second_num );
+        var result = calculate_x( first_num, second_num );
 
-        result_p.textContent = "x = " + x;
+        result_p.textContent = "x = " + parseInt(result);
         $("#result").html(result_p);
 
     } else  {
@@ -45,3 +45,4 @@ $("#submit-btn").click( function ( event ) {
 
 });
 
+console.log(result);
